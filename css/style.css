@@ -93,10 +93,13 @@ header a {
     padding: 6% 15%;
 }
 
+.container {
+    padding: 50px 0;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
-    padding: 50px 0;
 }
 
 .about-img {
@@ -106,4 +109,8 @@ header a {
 
 .btn-visit {
     margin-top: 20px;
+}
+
+.container p {
+    padding: 10px 0;
 }
