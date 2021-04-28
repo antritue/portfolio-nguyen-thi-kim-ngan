@@ -33,6 +33,10 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 header {
     height: 30vh;
     display: flex;
@@ -103,14 +107,25 @@ header a {
 }
 
 .about-img {
-    width: 300px;
+    width: 400px;
     margin-right: 50px;
 }
 
 .btn-visit {
     margin-top: 20px;
+    font-size: 1rem;
 }
 
 .container p {
     padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.thumbnail {
+    width: 400px;
+    margin-right: 50px;
 }
