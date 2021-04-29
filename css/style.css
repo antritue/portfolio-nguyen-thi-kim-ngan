@@ -143,7 +143,7 @@ header a:hover {
 }
 
 .btn-resume {
-    transform: translateY(-4vh);
+    /* transform: translateY(-4vh); */
 }
 
 .section {
@@ -182,4 +182,56 @@ footer {
 .thumbnail {
     width: 400px;
     margin-right: 50px;
+}
+
+.btn-resume:hover,
+.btn-visit:hover {
+    animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes shake-bottom {
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+    }
+    10% {
+        transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+    80% {
+        transform: rotate(-2deg);
+    }
+    90% {
+        transform: rotate(2deg);
+    }
+}
+
+.delay-1s {
+    animation-delay: 1s;
+}
+
+.delay-1500ms {
+    animation-delay: 1500ms;
+}
+
+.delay-2s {
+    animation-delay: 2s;
+}
+
+.delay-2500ms {
+    animation-delay: 2500ms;
+}
+
+.delay-3s {
+    animation-delay: 3s;
 }
