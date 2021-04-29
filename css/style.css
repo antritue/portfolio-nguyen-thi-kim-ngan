@@ -6,16 +6,15 @@
 html {
     font-size: 1rem;
     font-family: 'Comfortaa', cursive;
-    /* --main-color: #be2835; */
+    --main-color: #be2835;
     /* --secondary-color: #f6f6f6; */
     scroll-behavior: smooth;
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #ff9292, #ffb4b4, #ffdcdc, #ffe8e8);
+    background-image: linear-gradient(to bottom right, #98ddca, #d5ecc2, #ffd3b4, #ffaaa7);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh; */
 }
 
 p {
@@ -28,9 +27,28 @@ h1 {
     text-transform: uppercase;
 }
 
+
+/* .tracking-in-expand {
+    animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
 h2 {
     font-size: 2rem;
     text-transform: uppercase;
+    color: var(--main-color);
 }
 
 h3 {
@@ -48,6 +66,20 @@ header {
 .name {
     font-size: 2.5rem;
     padding-bottom: 20px;
+    color: var(--main-color);
+    animation: changeColor 5s infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        color: var(--main-color)
+    }
+    50% {
+        color: #542e71;
+    }
+    100% {
+        color: var(--main-color);
+    }
 }
 
 ul {
@@ -62,8 +94,29 @@ nav li {
 
 header a {
     text-decoration: none;
-    text-transform: uppercase;
     color: black;
+    font-size: 1.1rem;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+    text-decoration-thickness: 2px;
+}
+
+.text-focus-in {
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
 .openning {
@@ -123,6 +176,7 @@ header a {
 footer {
     text-align: center;
     padding-bottom: 20px;
+    color: transparent;
 }
 
 .thumbnail {
