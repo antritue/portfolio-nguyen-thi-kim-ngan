@@ -25,6 +25,7 @@ p {
 h1 {
     font-size: 3rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 
@@ -159,8 +160,17 @@ header a:hover {
     flex-direction: row;
 }
 
+.left {
+    margin-right: 50px;
+    flex: 4;
+}
+
+.right {
+    flex: 6;
+}
+
 .about-img {
-    width: 400px;
+    width: 100%;
     margin-right: 50px;
 }
 
@@ -180,8 +190,7 @@ footer {
 }
 
 .thumbnail {
-    width: 400px;
-    margin-right: 50px;
+    width: 100%;
 }
 
 .btn-resume:hover,
@@ -234,4 +243,45 @@ footer {
 
 .delay-3s {
     animation-delay: 3s;
+}
+
+
+/* tablet */
+
+@media only screen and (max-width: 960px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .left {
+        margin-right: 0;
+        margin-bottom: 30px;
+        flex: auto;
+    }
+    .right {
+        flex: auto
+    }
+    .btn-visit {
+        text-align: center;
+    }
+}
+
+
+/* phone  */
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .name {
+        font-size: 1.75rem;
+    }
+    nav li {
+        margin: 20px 20px;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
 }
