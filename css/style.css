@@ -12,7 +12,8 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #98ddca, #d5ecc2, #ffd3b4, #ffaaa7);
+    /* background-image: linear-gradient(to bottom right, #98ddca, #d5ecc2, #ffd3b4, #ffaaa7); */
+    background-color: #E1F8DC;
     background-repeat: no-repeat;
     background-size: cover;
 }
